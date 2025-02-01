@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Welcome to my website!"
+    return render_template('home.html')
 
 @app.route('/weather', methods=['GET', 'POST'])
 def weather_submit():
